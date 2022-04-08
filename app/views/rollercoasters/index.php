@@ -1,18 +1,21 @@
 
 <?php
-        foreach ($data['rollercoaster'] as $rollercoaster);
-
-        echo "RollerCoaster: " . $rollercoaster->nameRollerCoaster ;
-            echo "<br>";
-        echo "Park: " . $rollercoaster->NameAmusementPark;
-            echo "<br>";
-        echo "Country: " . $rollercoaster->country;
-            echo "<br>";
-        echo "Topspeed: " . $rollercoaster->topspeed;
-            echo "<br>";
-        echo "Height: " . $rollercoaster->height;
-            echo "<br>";
-            echo "<br>"
+echo $data["title"];
 
 ?>
+<table>
+  <thead>
+    <th>id</th>
+    <th>naam</th>
+    <th>park</th>
+    <th>land</th>
+    <th>snelheid</th>
+    <th>hoogte</th>
+    
+
+  </thead>
+  <tbody>
+    <?=$data['rollercoaster']?>
+  </tbody>
+</table>
 <a href="<?=URLROOT;?>/pages/index">terug</a>
